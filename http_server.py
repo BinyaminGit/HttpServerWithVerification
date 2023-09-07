@@ -9,7 +9,6 @@ Data Store: A class-level dictionary data_store is created to simulate a small d
 do_GET Method: Defines what to do when a GET request is received. It has two routes:
 
 /data: Returns a JSON object representing the data_store.
-/: Returns a 'Hello, NVIDIA DOCA SDK!' message.
 do_POST Method: Defines what to do when a POST request is made to /data. It updates data_store with the data received.
 
 run_server Function: This function initializes the server on port 8000 and makes it ready to serve requests indefinitely.
