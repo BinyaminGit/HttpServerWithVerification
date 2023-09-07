@@ -24,7 +24,7 @@ class TestHTTPServer(unittest.TestCase):
 
     def test_server_response_content(self):
         response = requests.get('http://localhost:8000')
-        self.assertEqual(response.text, 'Hello, NVIDIA DOCA SDK!')
+        self.assertEqual(response.text, 'Hello, Example SDK!')
 
     def test_data_route_post(self):
         response = requests.post('http://localhost:8000/data', json={'key': 'value'})
